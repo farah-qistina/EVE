@@ -1,0 +1,412 @@
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('./fonts/playfair-display-v30-latin/playfair-display-v30-latin-regular.woff2') format('woff2'),
+         url('./fonts/playfair-display-v30-latin/playfair-display-v30-latin-regular.woff') format('woff'),
+         url('./fonts/playfair-display-v30-latin/playfair-display-v30-latin-regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Noto Serif Display';
+    src: url('./fonts/noto-serif-display-v17-latin/noto-serif-display-v17-latin-regular.woff2') format('woff2'),
+         url('./fonts/noto-serif-display-v17-latin/noto-serif-display-v17-latin-regular.woff') format('woff'),
+         url('./fonts/noto-serif-display-v17-latin/noto-serif-display-v17-latin-regular.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+}
+
+main, footer {
+    position: relative;
+    top: 4rem;
+}
+
+.background {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/* Header */
+
+header {
+    position: fixed;
+    background-color: white;
+    height: 4rem;
+    top: 0;
+    width: 100%;
+    left: 0;
+    z-index: 1;
+}
+
+header .content {
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    height: 4rem;
+}
+
+header .image {
+    flex: 1;
+}
+
+header .image img {
+    height: 2.5rem;
+    width: auto;
+    vertical-align: bottom;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    font-weight: 500;
+}
+
+li {
+    font-size: 1.2rem;
+    margin: 0 1.4rem;
+}
+
+li a img {
+    height: 1.5rem;
+    width: auto;
+}
+
+@media only screen and (max-width: 580px) {
+    ul {
+        padding-left: 1rem;
+    }
+
+    li {
+        margin: 0 0 0 0.8rem;
+    }
+
+    ul .cart {
+        display: none;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 384px) {
+    li {
+        font-size: 0.84rem;
+        margin: 0 0 0 0.5rem;
+    }
+}
+
+
+
+/* About */
+
+#about {
+    padding: 5.5rem 6rem 6.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./images/996cbe4b8f6323db0f8e6015ff3d984a.jpg');
+    background-position: top;
+}
+
+h1, h2 {
+    opacity: 0.8;
+}
+
+h1 {
+    font-family: 'Noto Serif Display', serif;
+    font-weight: normal;
+    font-size: 7rem;
+    margin: 0;
+    text-shadow: 0.1rem 0.1rem 0.1rem #7c736d;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: .1rem;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+@media only screen and (max-width: 384px) {
+    #about {
+        padding: 2.25rem 6rem 3.25rem;
+    }
+
+    h1 {
+        font-size: 5.25rem;
+        text-shadow: 0.075rem 0.075rem 0.075rem #7c736d;
+    }
+    
+    h2 {
+        font-size: 1.125rem;
+        letter-spacing: .075rem;
+    }
+}
+
+
+
+/* Products */
+
+#categories {
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.products {
+    max-width: 88rem;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 1rem 2rem 0;
+}
+
+#categories h2 {
+    font-family: 'Noto Serif Display', serif;
+    font-size: 2.7rem;
+    font-style: normal;
+    letter-spacing: normal;
+    margin: 1.5rem 0 0;
+}
+
+h3 {
+    font-weight: normal;
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+.products p {
+    font-family: 'Noto Serif Display', serif;
+    font-size: 0.8rem;
+    margin: 0.5rem 0 0;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.product {
+    display: flex;
+    align-items: flex-end;
+    height: 25rem;
+    margin: 3rem;
+    width: 20rem;
+}
+
+.product .title {
+    background-color: white;
+    margin: 1rem;
+    padding: 1rem;
+    width: 100%;
+}
+
+#annulets {
+    background-image: url('./images/6d7459de9abfe305afd9d62c31400748.jpg');
+    background-position: right;
+}
+
+#earrings {
+    background-image: url('./images/72a2f43ba39a6ef1b2467851a2ff79da.jpg');
+    background-position: top;
+}
+
+#necklaces {
+    background-image: url('./images/1225481ee5cb1d0fc03dd4fc929596b0.jpg');
+}
+
+#understated {
+    background-image: url('./images/b2266e6befdbcb113f4c6334814c910f.jpg');
+    background-position: bottom;
+}
+
+#for-her {
+    background-image: url('./images/c6b25405d4d0db7c02a91acd7bd80678.jpg');
+    background-position: bottom;
+}
+
+#pearls {
+    background-image: url('./images/1ea6b31876d18d22432b049417008679.jpg');
+    background-position: bottom;
+}
+
+@media only screen and (max-width: 498px) {
+    #categories {
+        padding: 5rem 0 4rem;
+    }
+
+    #categories h2 {
+        font-size: 1.6rem;
+        margin: 0;
+    }
+
+    .products {
+        padding: 1rem 0 0;
+    }
+
+    .product {
+        height: 15rem;
+        margin: 1rem;
+        width: 12rem;
+    }
+
+    .product .title {
+        padding: 0.4rem 0.8rem;
+        margin: 0.5rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    .products p {
+        font-size: 0.6rem;
+        margin: 0.25rem 0 0;
+    }
+}
+
+
+
+/* Founder */
+
+#founder {
+    background-image: url('./images/c7edf7be52a49b4acd06b172950d5ca1.jpg');
+    background-attachment: fixed;
+    background-position: right;
+}
+
+.padding {
+    padding: 4rem;
+}
+
+#founder .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+#founder img {
+    height: 30rem;
+    width: 60rem;
+    object-fit: cover;
+    object-position: 50% 70%;
+    padding: 4rem;
+}
+
+.quote {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 4rem 0;
+}
+
+.quote .title {
+    font-family: 'Noto Serif Display', serif;
+    font-size: 3.5rem;
+    text-shadow: 0.1rem 0.1rem 0.1rem #a59992;
+    margin-bottom: 2rem;
+    font-weight: 400;
+}
+
+.quote p {
+    color: #7c736d;
+    font-size: 2rem;
+    margin: 0 4rem 0 0;
+}
+
+@media only screen and (max-width: 1068px) {
+    #founder img {
+        height: 15rem;
+        width: 30rem;
+        padding: 2rem;
+    }
+
+    .padding {
+        padding: 2rem;
+    }
+
+    .quote {
+        padding: 2.25rem 0;
+    }
+    
+    .quote .title {
+        font-size: 1.75rem;
+        text-shadow: 0.05rem 0.05rem 0.05rem #a59992;
+        margin-bottom: 1rem;
+    }
+    
+    .quote p {
+        font-size: 1rem;
+        margin: 0 2rem 0 0;
+    }
+}
+
+@media only screen and (max-width: 820px) {
+    #founder {
+        background-image: url('./images/c7edf7be52a49b4acd06b172950d5ca1\ -\ Copy.jpg');
+        background-position: bottom;
+    }
+}
+
+@media only screen and (max-width: 542px) {
+    #founder .content {
+        flex-direction: column;
+    }
+
+    #founder img {
+        height: auto;
+        width: 86%;
+        padding: 1.75rem 1.75rem 0;
+    }
+
+    .quote {
+        max-width: 86%;
+        padding: 1.75rem 0;
+    }
+    
+    .quote .title {
+        font-size: .875rem;
+        text-shadow: 0.025rem 0.025rem 0.025rem #a59992;
+        margin-bottom: 0.5rem;
+    }
+    
+    .quote p {
+        font-size: 0.75rem;
+        margin: 0;
+    }
+}
+
+
+
+/* Footer */
+
+footer {
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+    height: 4rem;
+}
+
+footer .copyright {
+    padding-right: 1rem;
+    flex: 1;
+}
+
+@media only screen and (max-width: 498px) {
+    footer {
+        padding: 0 0.8rem;
+        font-size: 0.6rem;
+    }
+}
