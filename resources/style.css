@@ -316,7 +316,7 @@ h3 {
 .quote .title {
     font-family: 'Noto Serif Display', serif;
     font-size: 3.5rem;
-    text-shadow: 0.1rem 0.1rem 0.1rem #a59992;
+    text-shadow: 0.075rem 0.075rem 0.075rem #a59992;
     margin-bottom: 2rem;
     font-weight: 400;
 }
@@ -344,7 +344,7 @@ h3 {
     
     .quote .title {
         font-size: 1.75rem;
-        text-shadow: 0.05rem 0.05rem 0.05rem #a59992;
+        text-shadow: 0.035rem 0.035rem 0.035rem #a59992;
         margin-bottom: 1rem;
     }
     
@@ -379,7 +379,7 @@ h3 {
     
     .quote .title {
         font-size: .875rem;
-        text-shadow: 0.025rem 0.025rem 0.025rem #a59992;
+        text-shadow: 0.02rem 0.02rem 0.02rem #a59992;
         margin-bottom: 0.5rem;
     }
     
