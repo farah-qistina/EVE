@@ -12,6 +12,10 @@
          url('./fonts/noto-serif-display-v17-latin/noto-serif-display-v17-latin-regular.ttf') format('truetype');
 }
 
+html {
+    scroll-behavior:smooth;
+}
+
 body {
     font-family: 'Playfair Display', serif;
     margin: 0;
@@ -344,7 +348,7 @@ h3 {
     
     .quote .title {
         font-size: 1.75rem;
-        text-shadow: 0.035rem 0.035rem 0.035rem #a59992;
+        text-shadow: 0.04rem 0.04rem 0.04rem #a59992;
         margin-bottom: 1rem;
     }
     
@@ -379,7 +383,7 @@ h3 {
     
     .quote .title {
         font-size: .875rem;
-        text-shadow: 0.02rem 0.02rem 0.02rem #a59992;
+        text-shadow: 0.025rem 0.025rem 0.025rem #a59992;
         margin-bottom: 0.5rem;
     }
     
