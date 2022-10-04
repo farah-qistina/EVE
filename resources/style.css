@@ -298,8 +298,12 @@ h3 {
         margin: 0.25rem 0 0;
     }
 
+    .products .sale {
+        width: 18%;
+    }
+
     .products .sale p {
-        font-size: 1rem;
+        font-size: .6rem;
     }
     
 }
